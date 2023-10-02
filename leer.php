@@ -1,5 +1,5 @@
 <?php
-printf("Abriendo archivo");
+printf("Abriendo archivo<br>");
 $archivo_url = fopen("archivo.txt","r");
 
 $texto = "";

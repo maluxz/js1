@@ -5,17 +5,14 @@ printf("Abriendo archivo<br>");
 $start_time = microtime(true);
 
 $archivo = 'archivo.txt';
-
 if (file_exists($archivo)) {
     // Abrir el archivo en modo lectura
     $handle = fopen($archivo, 'r');
-
     if ($handle) {
         while (($line = fgets($handle)) !== false) {
             // Mostrar cada línea leída
             echo $line;
         }
-
         // Cerrar el archivo
         fclose($handle);
     } else {
